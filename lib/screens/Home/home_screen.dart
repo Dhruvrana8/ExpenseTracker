@@ -1,3 +1,4 @@
+import 'package:dhruv_expense_tracker/screens/Home/image_path.dart';
 import 'package:dhruv_expense_tracker/screens/Home/strings.dart';
 import 'package:dhruv_expense_tracker/screens/WebView/web_view_screen.dart';
 import 'package:flutter/material.dart';
@@ -24,12 +25,12 @@ class HomeScreen extends StatelessWidget {
         child: ListView(
           children: [
             ContainerItem(
-              title: "Expense",
-              imagePath: 'assets/images/png/Expenses.png',
+              title: Strings.expenses,
+              imagePath: ImagePath.expenses,
             ),
             ContainerItem(
-              title: "Income",
-              imagePath: 'assets/images/png/Income.png',
+              title: Strings.income,
+              imagePath: ImagePath.income,
             ),
           ],
         ),
